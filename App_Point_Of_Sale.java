@@ -19,23 +19,22 @@ public class JavaKasir {
         //perulangan
         while(run){ //kurung pembuka while
             //tampilan menu
-            System.out.println("-------------------------------");
+            
             System.out.println("========== M E N U ============");
-            System.out.println("-------------------------------");
             System.out.println("+ [1]. VIEW DATA BARANG       +");
             System.out.println("+ [2]. TAMBAH BARANG          +");
             System.out.println("+ [3]. TAMBAH STOCK BARANG    +");
             System.out.println("+ [4]. REMOVE DATA BARANG     +");
             System.out.println("+ [5]. PENJUALAN              +");
             System.out.println("+ [6]. EXIT                   +");
-            System.out.println("-------------------------------");
+            
             //scan
             Scanner scan = new Scanner(System.in);
             System.out.print("Masukkan Pilihan Opsi : ");
             String opsi = scan.nextLine();
             System.out.println("-------------------------------");
             if (opsi.equals("1")) { //kurung pembuka opsi 1 membaca data
-                System.out.println("--------------------------------------------------------------------");
+               
                 System.out.println("id\t"+"barang\t\t"+"stock\t\t"+"terjual\t\t"+"harga\n");
                 try {
                     File myFile = new File(fileName);
@@ -46,7 +45,7 @@ public class JavaKasir {
                         String data = fileReader.nextLine();
                         System.out.println(data);
                     }  
-                    System.out.println("--------------------------------------------------------------------");
+                  
                 } catch (IOException e) {
                     System.out.println("Terjadi kesalahan karena: " + e.getMessage());
                 }
@@ -165,7 +164,6 @@ public class JavaKasir {
                                         System.out.println("Terjadi kesalahan karena: " + e.getMessage());
                             }
                         }else{
-                            System.out.println("-------------------------------");
                             System.out.println("Penghapusan Di Batalkan");
                         }
                 
@@ -179,7 +177,6 @@ public class JavaKasir {
                 
             }//kurung penutup opsi 4
             if (opsi.equals("5")) { //kurung pembuka opsi 5
-                System.out.println("--------------------------------------------------------------------");
                 System.out.println("id\t"+"barang\t\t"+"stock\t\t"+"terjual\t\t"+"harga");
                 System.out.println("--------------------------------------------------------------------");
                 try {
@@ -226,16 +223,14 @@ public class JavaKasir {
                     
                     try {
                         FileWriter fileWriter = new FileWriter(transaksi, true);
-                        fileWriter.write("-------------------------------");
+                        
                         fileWriter.write("\nData Belanjaan");
-                        fileWriter.write("\n-------------------------------");
                         fileWriter.write("\nId Barang      : "+pilihBarang);
                         fileWriter.write("\nNama Barang    : "+dataBarang.get(index).namaBarang);
                         fileWriter.write("\nJumlah Barang  : "+jumlahBelanjaan);
                         fileWriter.write("\nHarga Barang   : "+dataBarang.get(index).hargaBarang);
                         fileWriter.write("\n-------------------------------");
                         fileWriter.write("\nTotal Bayar    : "+dataBarang.get(index).hargaBarang*jumlahBelanjaan);
-                        fileWriter.write("\n-------------------------------");
                         fileWriter.close();
                     } catch (IOException e) {
                         System.out.println("Terjadi kesalahan karena: " + e.getMessage());
@@ -253,7 +248,6 @@ public class JavaKasir {
                     System.out.println("Terjadi kesalahan karena: " + e.getMessage());
                 }
                 }else{
-                        System.out.println("-------------------------------");
                         System.out.println("Id Yang Anda Masukkan Tidak Ditemukan");
                     }
                 
