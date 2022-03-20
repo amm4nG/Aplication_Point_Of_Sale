@@ -1,4 +1,4 @@
-# App Point Of Sale
+# Aplication Point Of Sale
 
 -------------------------
 ### NAMA  : ARMAN UMAR
