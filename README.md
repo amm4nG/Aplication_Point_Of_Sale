@@ -6,6 +6,6 @@ NIM   : D0221049
 
 KELAS : INFORMATIKA D
 
-Aplikasi ini adalah sebuah aplikasi Point Of Sale / Kasir sederhana berbasis CLI
+Aplikasi ini adalah sebuah aplikasi Point Of Sale / Mesin Kasir sederhana berbasis CLI
 
 Mohon maaf atas segala kekurangan :)
