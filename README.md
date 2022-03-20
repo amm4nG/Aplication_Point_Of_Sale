@@ -1,10 +1,10 @@
 # App Point Of Sale
 
-# NAMA  : ARMAN UMAR
+NAMA  : ARMAN UMAR
 
-# NIM   : D0221049
+NIM   : D0221049
 
-# KELAS : INFORMATIKA D
+KELAS : INFORMATIKA D
 
 Aplikasi ini adalah sebuah aplikasi Point Of Sale / Mesin Kasir sederhana berbasis CLI
 
